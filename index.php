@@ -9,7 +9,7 @@
     <?php include 'Link/link.php'; ?>
 </head>
 <body onload="fetch()">
-<nav class="navbar navbar-expand-lg nav_style p-3">
+<nav class="navbar navbar-expand-lg navbar-light bg-light nav_style p-3">
   <a class="navbar-brand pl-5" href="#">COVID-19</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -67,7 +67,7 @@
         <h3 class="text-uppercase text-center">Covid-19 LIVE WORLD CASE UPDATES</h3>
     </div>
 
-    <div class="d-flex justify-content-around align-items-center">
+    <div class="d-flex justify-content-around align-items-center count_style">
 
         <?php
 
@@ -108,7 +108,7 @@
         <h3 class="text-uppercase text-center">Covid-19 LIVE INDIA CASE UPDATES</h3>
     </div>
 
-    <div class="d-flex justify-content-around align-items-center">
+    <div class="d-flex justify-content-around align-items-center count_style">
 
         <?php
 
@@ -159,7 +159,7 @@
         <h3 class="text-uppercase text-center">Covid-19 LIVE INDIA GUJARAT CASE UPDATES</h3>
     </div>
 
-    <div class="d-flex justify-content-around align-items-center">
+    <div class="d-flex justify-content-around align-items-center count_style">
 
         <?php
 
@@ -454,7 +454,7 @@
 <!-- ********************** footer ******************************** -->
 
 <footer class="mt-5"> 
-    <div class="footer_style text-white text-center container-fluid">
+    <div class="footer_style bg-light text-dark text-center container-fluid">
         <p>Copyright by JdProgrammer</p>
     </div>
 </footer>

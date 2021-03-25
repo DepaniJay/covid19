@@ -359,6 +359,37 @@
         <h1>Contact Us ASAP</h1>
     </div>
 
+    <div>
+        <p class="text-center text-success">
+        <?php
+            include 'connection.php';
+            if(isset($_POST['submit'])){
+                $username = $_POST['username'];
+                $email = $_POST['email'];
+                $mobile = $_POST['mobile'];
+                $symp = $_POST['coronasym'];
+                $message = $_POST['message'];
+
+                $check = "";
+                foreach($symp as $check1){
+                    $check .= $check1 . ",";
+                }
+
+                $insertquery = "INSERT INTO `coronacase`(`username`, `email`, `mobile`, `symp`, `message`) VALUES ('$username','$email','$mobile','$check','$message')";
+
+                $query = mysqli_query($con,$insertquery);
+
+                if($query){
+                    echo "Thank You for submiting your health details. \n Our Doctor's contact you within some time.";
+                }else{
+                    echo "Some Error occurs in submiting your response please try to submit after some time";
+                }
+            }
+
+
+        ?>
+        </p>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2 col-12">
@@ -512,38 +543,3 @@ function topFunction(){
 </body>
 </html>
 
-<?php
-include 'connection.php';
-if(isset($_POST['submit'])){
-    $username = $_POST['username'];
-    $email = $_POST['email'];
-    $mobile = $_POST['mobile'];
-    $symp = $_POST['coronasym'];
-    $message = $_POST['message'];
-
-    $check = "";
-    foreach($symp as $check1){
-        $check .= $check1 . ",";
-    }
-
-    $insertquery = "INSERT INTO `coronacase`(`username`, `email`, `mobile`, `symp`, `message`) VALUES ('$username','$email','$mobile','$check','$message')";
-
-    $query = mysqli_query($con,$insertquery);
-
-    if($query){
-        ?>
-        <script>
-            alert("Inserted Successful");
-        </script>
-        <?php
-    }else{
-        ?>
-        <script>
-            alert("No Inserted");
-        </script>
-        <?php
-    }
-}
-
-
-?>

@@ -67,7 +67,7 @@
         <h3 class="text-uppercase text-center">Covid-19 LIVE WORLD CASE UPDATES</h3>
     </div>
 
-    <div class="d-flex justify-content-around align-items-center count_style">
+    <div class="row d-flex justify-content-around align-items-center count_style">
 
         <?php
 
@@ -83,19 +83,19 @@
         ?>
 
 
-        <div class="text-center">
+        <div class="col-lg-3 col-md-3 col-12 text-center">
             <h1 class="count"><?php echo $coronaupdate['TotalConfirmed'];  ?></h1>
             <p>Total Confirmed</p>
         </div>
-        <div class="text-center">
+        <div class="col-lg-3 col-md-3 col-12 text-center">
             <h1 class="count"><?php echo $totalactive;  ?></h1>
             <p>Total Active</p>
         </div>
-        <div class="text-center">
+        <div class="col-lg-3 col-md-3 col-12 text-center">
             <h1 class="count"><?php echo $coronaupdate['TotalRecovered'];  ?></h1>
             <p>Total Recovered</p>
         </div>
-        <div class="text-center">
+        <div class="col-lg-3 col-md-3 col-12 text-center">
             <h1 class="count"><?php echo $coronaupdate['TotalDeaths'];  ?></h1>
             <p>Total Deaths</p>
         </div>
@@ -108,7 +108,7 @@
         <h3 class="text-uppercase text-center">Covid-19 LIVE INDIA CASE UPDATES</h3>
     </div>
 
-    <div class="d-flex justify-content-around align-items-center count_style">
+    <div class="row d-flex justify-content-around align-items-center count_style">
 
         <?php
 
@@ -134,19 +134,19 @@
         ?>
 
 
-        <div class="text-center">
+        <div class="col-lg-3 col-md-3 col-12 text-center">
             <h1 class="count"><?php echo $indiacorona['Countries'][$i]['TotalConfirmed'];  ?></h1>
             <p>Total Confirmed</p>
         </div>
-        <div class="text-center">
+        <div class="col-lg-3 col-md-3 col-12 text-center">
             <h1 class="count"><?php echo $indiaactive;  ?></h1>
             <p>Total Active</p>
         </div>
-        <div class="text-center">
+        <div class="col-lg-3 col-md-3 col-12 text-center">
             <h1 class="count"><?php echo $indiacorona['Countries'][$i]['TotalRecovered'];  ?></h1>
             <p>Total Recovered</p>
         </div>
-        <div class="text-center">
+        <div class="col-lg-3 col-md-3 col-12 text-center">
             <h1 class="count"><?php echo $indiacorona['Countries'][$i]['TotalDeaths'];  ?></h1>
             <p>Total Deaths</p>
         </div>
@@ -159,7 +159,7 @@
         <h3 class="text-uppercase text-center">Covid-19 LIVE INDIA GUJARAT CASE UPDATES</h3>
     </div>
 
-    <div class="d-flex justify-content-around align-items-center count_style">
+    <div class="row d-flex justify-content-around align-items-center count_style">
 
         <?php
 
@@ -184,19 +184,19 @@
         ?>
 
 
-        <div class="text-center">
+        <div class="col-lg-3 col-md-3 col-12 text-center">
             <h1 class="count"><?php echo $gujaratcorona['statewise'][$i]['confirmed'];  ?></h1>
             <p>Total Confirmed</p>
         </div>
-        <div class="text-center">
+        <div class="col-lg-3 col-md-3 col-12 text-center">
             <h1 class="count"><?php echo $gujaratcorona['statewise'][$i]['active'];  ?></h1>
             <p>Total Active</p>
         </div>
-        <div class="text-center">
+        <div class="col-lg-3 col-md-3 col-12 text-center">
             <h1 class="count"><?php echo $gujaratcorona['statewise'][$i]['recovered'];  ?></h1>
             <p>Total Recovered</p>
         </div>
-        <div class="text-center">
+        <div class="col-lg-3 col-md-3 col-12 text-center">
             <h1 class="count"><?php echo $gujaratcorona['statewise'][$i]['deaths'];  ?></h1>
             <p>Total Deaths</p>
         </div>
